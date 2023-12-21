@@ -1,8 +1,8 @@
-import Card from "./Card.tsx";
-import Inputs from "./Inputs.tsx";
-import CardDetails from "./CardDetails.tsx";
+import Card from "./card";
+import Inputs from "./inputs";
+import CardDetails from "./cardDetails";
 import { useState } from "react";
-import GlobalStyle from "./GlobalStyle.tsx";
+import GlobalStyle from "./globalStyle";
 function App() {
   const [page, setPage] = useState<number>(0);
   const [name, setName] = useState<string>("");
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Card
+      <Card 
         name={name}
         setName={setName}
         number={number}
